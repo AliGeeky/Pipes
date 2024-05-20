@@ -12,7 +12,19 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'Pipes';
   nameInpt : string='';
+  dateInput : string= '';
+  amountInput :string='';
+  heightInput :number= 0 ;
   onNameChange(value:string){
     this.nameInpt=value;
+  }
+  onDateChange(value :string){
+    this.dateInput = value;
+  }
+  onAmountChange(value:string){
+    this.amountInput = value;
+  }
+  onHeightChange(value:number){
+    this.heightInput=value;
   }
 }
