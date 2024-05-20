@@ -43,5 +43,15 @@
         {{heightInput | number:"3.2-4"}}
       </div> 
 
+      <div class="row">
+        <div class="from-group col">
+          <label>  MIle</label><br>
+          <input type="number" class="form-control" (input)="onMileChange($event.target.value)">
+        </div>
+        <div class="col">
+          <label> KM</label><br>
+          {{mileInput | convert}}
+        </div> 
+
   </div>
 </div> 
